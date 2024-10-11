@@ -1,0 +1,82 @@
+import React, { useState } from "react";
+import logo from "./../images/logo.png";
+import home from "./../images/home.png";
+import profile from "./../images/user1.png";
+import about from "./../images/user2.png";
+import contact from "./../images/circle.png";
+import Image from "next/image";
+import Link from "next/link";
+import sun from "../images/sun.png";
+import moon from "../images/moon.png";
+import menu from '../images/menu.png'
+
+function Nav({theme, setTheme}) {
+  const [show, setShow] = useState(false)
+  return (
+    <div
+      className={` ${theme ?"bg-white":"bg-[#101010]"} sticky top-0 flex flex-row items-center justify-between shadow-lg pb-4  px-16 lg:px-40 gap-12 pt-8`}
+    >
+      <div>
+        <Image className="w-16 h-16" src={logo} />
+
+      </div>
+      <div className="flex flex-row gap-12 items-center justify-center">
+        <ul className="md:flex gap-6 lg:gap-16 hidden">
+          <li className="flex flex-row items-center justify-center gap-1">
+            <Image className="w-4 lg:w-6 h-4 lg:h-6" src={home} />
+            <Link className="font-medium text-lg" href="#home">Home</Link>
+          </li>
+          <li className="flex flex-row items-center justify-center gap-1">
+            <Image className="w-4 lg:w-6 h-4 lg:h-6" src={profile} />
+            <Link className="font-medium text-lg" href="#contact">Profile</Link>
+          </li>
+          <li className="flex flex-row items-center justify-center gap-1">
+            <Image className="w-4 lg:w-6 h-4 lg:h-6" src={about} />
+            <Link className="font-medium text-lg" href="#about">About Me</Link>
+          </li>
+          <li className="flex flex-row items-center justify-center gap-1">
+            <Image className="w-4 lg:w-6 h-4 lg:h-6" src={contact} />
+            <Link className="font-medium text-lg" href="#contact">Contact Me</Link>
+          </li>
+        </ul>
+        
+    <div className="flex flex-row items-center flex-wrap gap-4 relative">
+    <div className="w-auto h-auto bg-white rounded-2xl ml-12 px-3 py-2">
+            <Image
+            onClick={() => setTheme(!theme)}
+             className="w-8 h-8"
+             src={theme ? moon : sun}/>
+             
+        </div>
+        <div>
+        <Image  src={menu} className="w-12 h-12 md:hidden" onClick={()=> setShow(!show)}/>
+        </div>
+        {show && (
+          <div className="w-[100%]">
+          <ul className="flex flex-col w-[100%]  md:hidden absolute top-20 gap-8 items-start px-4 py-4 rounded-xl right-1 bg-[#202020]">
+          <li className="flex flex-row items-center justify-center gap-1">
+            <Image className="w-4 lg:w-6 h-4 lg:h-6" src={home} />
+            <Link className="font-medium text-lg" href="#home">Home</Link>
+          </li>
+          <li className="flex flex-row items-center justify-center gap-1">
+            <Image className="w-4 lg:w-6 h-4 lg:h-6" src={profile} />
+            <Link className="font-medium text-lg" href="#contact">Profile</Link>
+          </li>
+          <li className="flex flex-row items-center justify-center gap-1">
+            <Image className="w-4 lg:w-6 h-4 lg:h-6" src={about} />
+            <Link className="font-medium text-lg" href="#about">About Me</Link>
+          </li>
+          <li className="flex flex-row items-center justify-center gap-1">
+            <Image className="w-4 lg:w-6 h-4 lg:h-6" src={contact} />
+            <Link className="font-medium text-lg" href="#contact">Contact Me</Link>
+          </li>
+        </ul>
+          </div>
+        )}
+    </div>
+      </div>
+    </div>
+  );
+}
+
+export default Nav;
