@@ -6,15 +6,15 @@ function Certificates() {
     <div>
      <div className='bg-[#dcfbf5] px-16 lg:px-40  text-black gap-6 py-6  grid grid-cols-2 lg:grid-cols-3'>
          <div className='flex gap-4 flex-row items-center justify-center'>
-          <Image className='w-12 h-12' src={cyber}/>
+          <Image className='w-12 h-12' alt='cyber' src={cyber}/>
          <h1>Network Research</h1>
          </div>
          <div className='flex gap-4 flex-row items-center justify-center'>
-          <Image className='w-12 h-12' src={cyber}/>
+          <Image className='w-12 h-12' alt='cyber' src={cyber}/>
          <h1>Intro To Linux</h1>
          </div>
          <div className='flex gap-4 flex-row items-center justify-center'>
-          <Image className='w-12 h-12' src={cyber}/>
+          <Image className='w-12 h-12' alt='cyber' src={cyber}/>
          <h1>Intro To Python</h1>
          </div>
         
