@@ -1,6 +1,10 @@
 import React from "react";
 
-function Career({theme}) {
+type CareerProps = {
+  theme: boolean;
+};
+
+function Career({theme}:CareerProps) {
   return (
     <div>
       <div className="text-white px-12 lg:px-40">
