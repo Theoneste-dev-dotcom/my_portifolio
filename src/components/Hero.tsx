@@ -9,7 +9,7 @@ function Hero() {
       <div className=' sm:w-[90%] mt-12'>
         <div className='flex flex-row items-center mb-4 gap-16 md:w-[100%] md:gap-20'>
           <p className='text-md md:w-[50%] text-[#0d9ddf]'>Welcome To My Site</p>
-          <Image className='w-36 h-36' src={bubbles}/>
+          <Image className='w-36 h-36' alt='bubles' src={bubbles}/>
         </div>
         <div>
           <h1 className='text-[#00fbff] text-[30px]'>Hi, I'm D Theoneste, a</h1>
@@ -23,7 +23,7 @@ function Hero() {
         </div>
       </div>
       <div className='w-[100%] lg:w-[50%] sm:w-[100%] mt-16'>
-        <Image  src={holder}/>
+        <Image  alt='holder' src={holder}/>
       </div>
     </div>
     <div className='border-t-2 border-[#00faff] mx- md:mx-40 my-10'></div>

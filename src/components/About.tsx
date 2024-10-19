@@ -14,18 +14,18 @@ function About() {
 
       <div className='grid grid-cols-2 gap-4 lg:grid-cols-3 lg:px-40 px-16 mt-10'>
         <div>
-            <Image className='h-12 w-12' src={facebook}/>
+            <Image className='h-12 w-12' alt='about' src={facebook}/>
 
             <h2>Dufitimana Honest</h2>
 
         </div>
         <div>
-            <Image className='h-12 w-12' src={linked}/>
+            <Image className='h-12 w-12' alt='linked' src={linked}/>
             <h2>LinkedIn</h2>
             <a href="" className='text-[#06b]'>Connect me on <span className='text-[#50f3ff] block'>Dufitimana Theoneste</span></a>
         </div>
         <div>
-            <Image className='h-12 w-12' src={gmail}/>
+            <Image className='h-12 w-12' alt='gmail' src={gmail}/>
             <h2>
               <ul>
                 <li>dufitimanatheoneste05@gmail.com</li>
