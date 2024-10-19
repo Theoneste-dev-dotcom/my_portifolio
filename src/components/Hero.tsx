@@ -12,7 +12,7 @@ function Hero() {
           <Image className='w-36 h-36' alt='bubles' src={bubbles}/>
         </div>
         <div>
-          <h1 className='text-[#00fbff] text-[30px]'>Hi, I'm D Theoneste, a</h1>
+          <h1 className='text-[#00fbff] text-[30px]'>Hi, I&apos;m D Theoneste, a</h1>
           <h1 className='text-[#00faff] text-[30px]'>Fullstack <span className='text-[#0d95ff]'>Developer</span></h1>
         </div>
 
