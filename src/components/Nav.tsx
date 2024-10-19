@@ -10,7 +10,12 @@ import sun from "../images/sun.png";
 import moon from "../images/moon.png";
 import menu from '../images/menu.png'
 
-function Nav({theme, setTheme}) {
+type NavProps = {
+  theme: boolean;
+  setTheme: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+function Nav({theme, setTheme}:NavProps) {
   const [show, setShow] = useState(false)
   return (
     <div
