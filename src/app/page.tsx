@@ -14,12 +14,12 @@ function PortiFolio() {
   return (
     <div className={`${theme ? "bg-white text-black" : "bg-[#101010] text-white"} overflow-hidden w-[100vw]` }>
       <Nav theme={theme} setTheme={setTheme}/>
-      <Hero theme={theme}/>
-      <WhoDes  theme={theme}/>
-      <Work  theme={theme}/>
+      <Hero/>
+      <WhoDes />
+      <Work />
       <Career  theme={theme}/>
-      <Certificates  theme={theme}/>
-      <About  theme={theme}/>
+      <Certificates/>
+      <About/>
     </div>
   )
 }
