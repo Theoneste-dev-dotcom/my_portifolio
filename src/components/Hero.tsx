@@ -1,5 +1,4 @@
 import React from 'react'
-import holder from '../images/holder.png'
 import bubbles from '../images/bubles.png'
 import Image from 'next/image'
 import photo from '../images/photo.jpg'
