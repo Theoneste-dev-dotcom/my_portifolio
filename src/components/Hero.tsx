@@ -1,7 +1,7 @@
 import React from 'react'
+import holder from '../images/holder.png'
 import bubbles from '../images/bubles.png'
 import Image from 'next/image'
-import photo from '../images/photo.jpg'
 function Hero() {
   return (
     <>
@@ -23,7 +23,7 @@ function Hero() {
         </div>
       </div>
       <div className='w-[100%] lg:w-[50%] sm:w-[100%] mt-16'>
-        <Image  alt='holder' src={photo}/>
+        <Image  alt='holder' src={holder}/>
       </div>
     </div>
     <div className='border-t-2 border-[#00faff] mx- md:mx-40 my-10'></div>
