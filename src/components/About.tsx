@@ -7,7 +7,7 @@ import coder from "@/images/coder.png";
 import { FaCheck } from "react-icons/fa";
 function About() {
   return (
-    <div className="xl:px-60 py-6 w-full " id="contact">
+    <div className="xl:px-40 py-6 px-16 w-full " id="contact">
       <div className="lg:flex-row px-8 flex-col flex gap-4 items-center w-full  py-2 mt-16  mb-8">
         <div className="flex flex-col gap-8 ">
           <h1 className="font-bold mb-4 text-4xl">A little About Me</h1>

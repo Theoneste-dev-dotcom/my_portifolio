@@ -6,7 +6,8 @@ import suit from '../images/suitcase.png'
 
 function Work() {
   return (
-    <div className="w-screen xl:px-40">
+    <div className="w-screen lg:px-40 px-16">
+      <h1 className="text-4xl font-bold text-gray-900 mb-4">BackGround</h1>
       <div className="bg-gray-200 rounded-lg py-20  w-full  grid-cols-1  grid md:grid-cols-2  xl:grid-cols-3  items-center lg:justify-between px-16 ">
         <div>
           <h1 className="text-black text-4xl font-medium mb-4">Education</h1>

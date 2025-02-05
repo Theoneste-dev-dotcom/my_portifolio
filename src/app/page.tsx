@@ -18,7 +18,7 @@ function PortiFolio() {
       } overflow-hidden w-[100vw]`}
     >
       <Nav theme={theme} setTheme={setTheme} />
-      <Hero />
+      <Hero theme={theme}/>
       <WhoDes />
       <Work />
       <Career theme={theme} />
