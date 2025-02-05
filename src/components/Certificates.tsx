@@ -1,25 +1,16 @@
 import React from 'react'
-import cyber from '../images/cyber-security.png'
-import Image from 'next/image'
-function Certificates() {
+import Certi from './Certi'
+function Certificates({theme}: {theme:boolean}) {
   return (
-    <div>
-     <div className='bg-[#dcfbf5] px-16 lg:px-40  text-black gap-6 py-6  grid grid-cols-2 lg:grid-cols-3'>
-         <div className='flex gap-4 flex-row items-center justify-center'>
-          <Image className='w-12 h-12' alt='cyber' src={cyber}/>
-         <h1>Network Research</h1>
-         </div>
-         <div className='flex gap-4 flex-row items-center justify-center'>
-          <Image className='w-12 h-12' alt='cyber' src={cyber}/>
-         <h1>Intro To Linux</h1>
-         </div>
-         <div className='flex gap-4 flex-row items-center justify-center'>
-          <Image className='w-12 h-12' alt='cyber' src={cyber}/>
-         <h1>Intro To Python</h1>
-         </div>
-        
+    <div className='min-w-screen xl:px-60 px-4 mt-24'>
+      <h1 className='text-bold text-black text-4xl mb-8 mt-12 '>My Certificates</h1>
+     <div className='py-6 md:px-1 px-16 grid grid-cols-1 xl:grid-cols-2  gap-8 w-full '>
+          <Certi theme={theme}/> 
+          <Certi theme={theme}/> 
+          <Certi theme={theme}/> 
+          <Certi theme={theme}/> 
      </div>
-     <div className='border-t-2 border-[#00faff] mx-16 lg:mx-40 my-10'></div>
+     <div className='border-t-2 border-gray-200 mx-16 lg:mx-40 my-10'></div>
       
     </div>
   )

@@ -18,6 +18,7 @@ type NavProps = {
 function Nav({theme, setTheme}:NavProps) {
   const [show, setShow] = useState(false)
   return (
+
     <div
       className={` ${theme ?"bg-white":"bg-[#101010]"} sticky top-0 flex flex-row items-center justify-between shadow-lg pb-4  px-16 lg:px-40 gap-12 pt-8`}
     >
@@ -82,6 +83,7 @@ function Nav({theme, setTheme}:NavProps) {
     </div>
       </div>
     </div>
+
   );
 }
 

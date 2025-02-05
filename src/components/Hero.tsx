@@ -1,5 +1,5 @@
 import React from 'react'
-import holder from '../images/holder.png'
+import holder from '../images/theo.jpg'
 import bubbles from '../images/bubles.png'
 import Image from 'next/image'
 function Hero() {
@@ -22,8 +22,8 @@ function Hero() {
           <a href='#contact' className='md:px-12 lg:px-12  w-[47%] text-center py-2  rounded-3xl lg:py-4 text-white bg-gradient-to-r from-[#00fbff] to-[#90fcfa] hover:bg-white hover:bg-gradient-to-l border-2 border-white transition-all'>See my Projects</a>
         </div>
       </div>
-      <div className='w-[100%] lg:w-[50%] sm:w-[100%] mt-16'>
-        <Image  alt='holder' src={holder}/>
+      <div className='w-[100%] lg:w-[70%] sm:w-[100%] mt-16'>
+        <Image width={400}  alt='holder ' src={holder}/>
       </div>
     </div>
     <div className='border-t-2 border-[#00faff] mx- md:mx-40 my-10'></div>

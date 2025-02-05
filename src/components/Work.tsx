@@ -6,11 +6,11 @@ import suit from '../images/suitcase.png'
 
 function Work() {
   return (
-    <div>
-      <div className="bg-[#dcfbf5]  grid grid-cols-2 gap-16 lg:flex flex-row items-center lg:justify-between px-16  lg:px-40">
+    <div className="w-screen xl:px-40">
+      <div className="bg-gray-200 rounded-lg py-20  w-full  grid-cols-1  grid md:grid-cols-2  xl:grid-cols-3  items-center lg:justify-between px-16 ">
         <div>
-          <h1 className="text-black font-medium text-2xl text-center ml-2 mb-2">Education</h1>
-          <div className="flex flex-col mt-6 lg:flex-row gap-4 items-center justify-center">
+          <h1 className="text-black text-4xl font-medium mb-4">Education</h1>
+          <div className="flex flex-row gap-2 items-center">
             <Image className="w-12 h-12 " alt="rca" src={rca}/>
             <div className="text-black lg:text-left text-center">
               <p>Rwanda Coding Academy</p>
@@ -19,8 +19,8 @@ function Work() {
           </div>
         </div>
         <div>
-          <h1 className="text-black font-medium text-2xl text-center ml-2 mb-2">Home</h1>
-          <div className="flex  flex-col lg:flex-row gap-4 mt-6 lg:gap-4 items-center justify-center">
+          <h1 className="text-black font-medium text-4xl mb-4">Home</h1>
+          <div className="flex flex-row gap-2">
             <Image className="w-12 h-12 lg:text-left text-center" alt="location" src={location}/>
             <div className="text-black">
               <p>Gisenyi, Rubavu</p>
@@ -28,15 +28,15 @@ function Work() {
             </div>
           </div>
         </div>
-        <div className="lg:w-auto w-[80vw]">
-          <h1 className="text-black font-medium text-2xl text-center ml-2 mb-2">Work</h1>
-          <div className="flex flex-col lg:gap-2 gap-4 w-[100%] lg:flex-col  items-center  mb-6 justify-start">
-            <div className="text-black flex w-[50%]  flex-row gap-4 mt-6 items-center">
-              <Image className="lg:h-12 h-6 w-6 lg:w-12" alt='suit' src={suit}/>   
+        <div className="lg:w-auto w-full">
+          <h1 className="text-black font-medium text-4xl  mb-4">Work</h1>
+          <div className="flex flex-col lg:gap-2 gap-2 w-[100%] mb-6 justify-start">
+            <div className="text-black flex w-autl  flex-row gap-2 items-center ">
+              <Image className="lg:h-6 h-4 w-4 lg:w-6" alt='suit' src={suit}/>   
                <p className=""> Internship @CodeAlpha</p>
             </div>
-            <div className="text-black w-[50%]  flex  flex-row gap-4 items-center">
-              <Image className="lg:h-12 h-6 w-6 lg:w-12" alt='suit' src={suit}/>
+            <div className="text-black w-auto  flex  flex-row gap-2 items-center">
+              <Image className="lg:h-6 h-4 w-4 lg:w-6" alt='suit' src={suit}/>
                   <p> Learning SPE @RCA</p>
             </div>
           </div>
